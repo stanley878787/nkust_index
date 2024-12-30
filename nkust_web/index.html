@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Investa - Investment Website Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Topbar Start -->
+        <div class="container-fluid topbar px-0 d-none d-lg-block">
+            <div class="container px-0">
+                <div class="row gx-0 align-items-center" style="height: 45px;">
+                    <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+                        <div class="d-flex flex-wrap">
+                            <a href="#" class="text-muted me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>高雄市燕巢區 824 大學路1號</a>
+                            <a href="#" class="text-muted me-4"><i class="fas fa-phone-alt text-primary me-2"></i>07-6011000 #34102</a>
+                            <a href="#" class="text-muted me-0"><i class="fas fa-envelope text-primary me-2"></i>vicky923@nkust.edu.tw</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 text-center text-lg-end">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <a href="https://www.facebook.com/alumni.IMnkfust/" class="btn btn-primary btn-square rounded-circle nav-fill me-3"><i class="fab fa-facebook-f text-white"></i></a>
+                            <a href="https://www.instagram.com/nkust_im/" class="btn btn-primary btn-square rounded-circle nav-fill me-3"><i class="fab fa-instagram text-white"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid sticky-top px-0">
+            <div class="position-absolute bg-dark" style="left: 0; top: 0; width: 100%; height: 100%;">
+            </div>
+            <div class="container px-0">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-white py-3 px-4">
+                    <a href="index.html" class="navbar-brand p-0 d-flex align-items-center">
+                        <!-- <h1 class="text-primary m-0"><i class="fas fa-donate me-3"></i>資訊管理系</h1> -->
+                        <img src="https://i.ibb.co/WntfRYN/MIS-image.png" alt="Logo" height="80px" class="me-3">
+                        <h1 class="text-primary m-0">資訊管理系</h1>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="navbar-nav ms-auto py-0">
+                            <a href="index.html" class="nav-item nav-link active">首頁</a>
+                            <a href="https://mis.nkust.edu.tw/p/403-1097-840.php?Lang=zh-tw" class="nav-item nav-link">最新消息</a>
+                            <a href="service.html" class="nav-item nav-link">系所簡介</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">課程資訊</a>
+                                <div class="dropdown-menu m-0">
+                                    <a href="https://mis.nkust.edu.tw/p/412-1097-4462.php?Lang=zh-tw" class="dropdown-item">大學部</a>
+                                    <a href="https://mis.nkust.edu.tw/p/412-1097-4976.php?Lang=zh-tw" class="dropdown-item">碩士班</a>
+                                    <a href="https://mis.nkust.edu.tw/p/412-1097-4977.php?Lang=zh-tw" class="dropdown-item">碩專班</a>
+                                    <a href="https://mis.nkust.edu.tw/p/412-1097-9966.php?Lang=zh-tw" class="dropdown-item">總課表</a>
+                                </div>
+                            </div>
+                            <a href="https://mis.nkust.edu.tw/p/412-1097-4471.php?Lang=zh-tw" class="nav-item nav-link">招生專區</a>
+                            <a href="https://mis.nkust.edu.tw/p/412-1097-4978.php?Lang=zh-tw" class="nav-item nav-link">學生專區</a>
+                            <a href="https://mis.nkust.edu.tw/p/412-1097-5189.php?Lang=zh-tw" class="nav-item nav-link">國際交流</a>
+                            <a href="https://mis.nkust.edu.tw/p/412-1097-4489.php?Lang=zh-tw" class="nav-item nav-link">學術研究</a>
+                            <a href="https://mis.nkust.edu.tw/p/412-1097-4970.php?Lang=zh-tw" class="nav-item nav-link">下載專區</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">相關連結</a>
+                                <div class="dropdown-menu m-0">
+                                    <a href="https://www.facebook.com/IMnkfust" class="dropdown-item">資管店商粉絲團</a>
+                                    <a href="https://webap.nkust.edu.tw/nkust/" class="dropdown-item">校務行政系統</a>
+                                    <a href="http://www.mis.nkust.edu.tw/newMisAdmin/log.php" class="dropdown-item">校務系統</a>
+                                    <a href="https://www.nkust.edu.tw/p/412-1000-2559.php" class="dropdown-item">交通資訊</a>
+                                    <a href="http://old.mis.nkust.edu.tw/monograph/" class="dropdown-item">專題檢索系統</a>
+                                    <a href="https://acad.nkust.edu.tw/p/412-1004-1588.php?Lang=zh-tw" class="dropdown-item">行事曆</a>
+                                    <a href="https://chpw.nkust.edu.tw/" class="dropdown-item">電子郵件</a>
+                                    <a href="https://www.facebook.com/NetworksBYTE/" class="dropdown-item">網路位元組</a>
+                                    <a href="https://linktr.ee/NKUST_MIS" class="dropdown-item">系學會相簿</a>
+                                    <a href="https://www.facebook.com/alumni.IMnkfust/" class="dropdown-item">系友會</a>
+                                    <a href="https://south.1111.com.tw/?fbclid=IwAR38YXbVUy5s3QLcD5aZqD5hppjYWzzjt00j_fiYyYS0WJ2TuRpge8AJHBw" class="dropdown-item">1111人力銀行  </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="d-flex align-items-center flex-nowrap pt-xl-0">
+                            <button class="btn btn-primary btn-md-square mx-2" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
+                            <a href="#" class="btn btn-primary rounded-pill text-white py-2 px-4 ms-2 flex-wrap flex-sm-shrink-0">Start Investa</a>
+                        </div> -->
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+        <!-- Modal Search Start -->
+        <!-- <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h4 class="modal-title mb-0" id="exampleModalLabel">Search by keyword</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Modal Search End -->
+
+        <!-- Carousel Start -->
+        <div class="header-carousel owl-carousel">
+            <div class="header-carousel-item">
+                <div class="header-carousel-item-img-1">
+                    <!-- <img src="img/carousel-1.jpg" class="img-fluid w-100" alt="Image"> -->
+                    <a href="https://mis.nkust.edu.tw/app/index.php?Plugin=mobile&Action=mobileads&ad=5598"><img src="https://mis.nkust.edu.tw/var/file/97/1097/randimg/mobileadv_5598_2588621_12168.png" class="img-fluid w-100" alt="Image"></a>
+                </div>
+                <!-- <div class="carousel-caption">
+                    <div class="carousel-caption-inner text-start p-3">
+                        <h1 class="display-1 text-capitalize text-white mb-4 fadeInUp animate__animated" data-animation="fadeInUp" data-delay="1.3s" style="animation-delay: 1.3s;">The most prestigious Investments company in worldwide.</h1>
+                        <p class="mb-5 fs-5 fadeInUp animate__animated" data-animation="fadeInUp" data-delay="1.5s" style="animation-delay: 1.5s;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        </p>
+                        <a class="btn btn-primary rounded-pill py-3 px-5 mb-4 me-4 fadeInUp animate__animated" data-animation="fadeInUp" data-delay="1.5s" style="animation-delay: 1.7s;" href="#">Apply Now</a>
+                        <a class="btn btn-dark rounded-pill py-3 px-5 mb-4 fadeInUp animate__animated" data-animation="fadeInUp" data-delay="1.5s" style="animation-delay: 1.7s;" href="#">Read More</a>
+                    </div>
+                </div> -->
+            </div>
+            <div class="header-carousel-item mx-auto">
+                <div class="header-carousel-item-img-2">
+                    <!-- <img src="img/carousel-2.jpg" class="img-fluid w-100" alt="Image"> -->
+                    <img src="https://mis.nkust.edu.tw/var/file/97/1097/randimg/mobileadv_5734_563387_94203.png" class="img-fluid w-100" alt="Image">
+                </div>
+                <!-- <div class="carousel-caption">
+                    <div class="carousel-caption-inner text-center p-3">
+                        <h1 class="display-1 text-capitalize text-white mb-4">The most prestigious Investments company in worldwide.</h1>
+                        <p class="mb-5 fs-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        </p>
+                        <a class="btn btn-primary rounded-pill py-3 px-5 mb-4 me-4" href="#">Apply Now</a>
+                        <a class="btn btn-dark rounded-pill py-3 px-5 mb-4" href="#">Read More</a>
+                    </div>
+                </div> -->
+            </div>
+            <div class="header-carousel-item">
+                <div class="header-carousel-item-img-3">
+                    <img src="https://mis.nkust.edu.tw/var/file/97/1097/randimg/mobileadv_5733_1860048_86190.png" class="img-fluid w-100" alt="Image">
+                </div>
+                <!-- <div class="carousel-caption">
+                    <div class="carousel-caption-inner text-end p-3">
+                        <h1 class="display-1 text-capitalize text-white mb-4">The most prestigious Investments company in worldwide.</h1>
+                        <p class="mb-5 fs-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        </p>
+                        <a class="btn btn-primary rounded-pill py-3 px-5 mb-4 me-4" href="#">Apply Now</a>
+                        <a class="btn btn-dark rounded-pill py-3 px-5 mb-4" href="#">Read More</a>
+                    </div>
+                </div> -->
+            </div>
+            <div class="header-carousel-item">
+                <div class="header-carousel-item-img-3">
+                    <img src="https://mis.nkust.edu.tw/var/file/97/1097/randimg/mobileadv_5678_6271659_95573.png" class="img-fluid w-100" alt="Image">
+                </div>
+            </div>
+            <div class="header-carousel-item">
+                <div class="header-carousel-item-img-3">
+                    <img src="https://mis.nkust.edu.tw/var/file/97/1097/randimg/mobileadv_5677_9075192_89700.png" class="img-fluid w-100" alt="Image">
+                </div>
+            </div>
+            <div class="header-carousel-item">
+                <div class="header-carousel-item-img-3">
+                    <img src="https://mis.nkust.edu.tw/var/file/97/1097/randimg/mobileadv_5601_5347040_69394.png" class="img-fluid w-100" alt="Image">
+                </div>
+            </div>
+            <div class="header-carousel-item">
+                <div class="header-carousel-item-img-3">
+                    <img src="https://mis.nkust.edu.tw/var/file/97/1097/randimg/mobileadv_5358_5174956_23418.png" class="img-fluid w-100" alt="Image">
+                </div>
+            </div>
+            <div class="header-carousel-item">
+                <div class="header-carousel-item-img-3">
+                    <img src="https://mis.nkust.edu.tw/var/file/97/1097/randimg/mobileadv_5462_5947000_11751.png" class="img-fluid w-100" alt="Image">
+                </div>
+            </div>
+            <div class="header-carousel-item">
+                <div class="header-carousel-item-img-3">
+                    <img src="https://mis.nkust.edu.tw/var/file/97/1097/randimg/mobileadv_5354_9449425_41104.png" class="img-fluid w-100" alt="Image">
+                </div>
+            </div>      
+        </div>
+    </div>
+        <!-- Carousel End -->
+
+
+        <!-- About Start -->
+        <div class="container-fluid about bg-light py-5">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 col-xl-5 wow fadeInLeft" data-wow-delay="0.1s">
+                        <div class="about-img">
+                            <img src="img/87.png" class="img-fluid w-100 rounded-top bg-white" alt="Image">
+                            <!-- <img src="img/about-2.jpg" class="img-fluid w-100 rounded-bottom" alt="Image"> -->
+                            <img src="https://mis.nkust.edu.tw/var/file/97/1097/pictures/897/m/mczh-tw700x700_large9507_823846386508.jpg" class="img-fluid w-100 rounded-bottom" alt="Image">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-7 wow fadeInRight" data-wow-delay="0.3s">
+                        <h4 class="text-primary">關於我們</h4>
+                        <h1 class="display-5 mb-4">成立目標與宗旨</h1>
+                        <p class="text ps-4 mb-4">資訊管理系致力於培育兼具理論與實務能力的資管專業人才，結合智慧科技、電子商務及知識管理應用，以推動企業創新及地方發展。本系擁有卓越師資與先進設備，提供多元學程與實驗室，如APP設計、雲端大數據及智聯網創新應用，緊密結合產業趨勢。研究主軸涵蓋人工智慧、物聯網、金融科技、電子商務及創新服務，成果斐然，為國內頂尖資管學系之一。
+                        </p>
+                        <div class="row g-4 justify-content-between mb-5">
+                            <div class="col-lg-6 col-xl-5">
+                                <p class="text-dark"><i class="fas fa-check-circle text-primary me-1"></i> 人工智慧 & 物聯網</p>
+                                <p class="text-dark mb-0"><i class="fas fa-check-circle text-primary me-1"></i> 金融科技 & 區塊鏈</p>
+                            </div>
+                            <div class="col-lg-6 col-xl-7">
+                                <p class="text-dark"><i class="fas fa-check-circle text-primary me-1"></i> 電子商務 & 社群商務</p>
+                                <p class="text-dark mb-0"><i class="fas fa-check-circle text-primary me-1"></i> 創新服務應用</p>
+                            </div>
+                        </div>
+                        <div class="row g-4 justify-content-between mb-5">
+                            <div class="col-xl-5"><a href="https://mis.nkust.edu.tw/p/412-1097-4447.php?Lang=zh-tw" class="btn btn-primary rounded-pill py-3 px-5">發現更多</a></div>
+                            <div class="col-xl-7 mb-5">
+                                <div class="about-customer d-flex position-relative">
+                                    <img src="https://mis.nkust.edu.tw/var/file/97/1097/pictures/225/m/mczh-tw400x400_small45458_11062349199.jpg" class="img-fluid btn-xl-square position-absolute" style="left: 0; top: 0;"  alt="Image">
+                                    <img src="https://mis.nkust.edu.tw/var/file/97/1097/pictures/179/m/mczh-tw400x400_small23856_869252642076.jpg" class="img-fluid btn-xl-square position-absolute" style="left: 45px; top: 0;" alt="Image">
+                                    <img src="https://mis.nkust.edu.tw/var/file/97/1097/pictures/0/m/mczh-tw400x400_small23862_282388830343.jpg" class="img-fluid btn-xl-square position-absolute" style="left: 90px; top: 0;" alt="Image">
+                                    <img src="https://mis.nkust.edu.tw/var/file/97/1097/pictures/573/m/mczh-tw400x400_small23848_774219635259.jpg" class="img-fluid btn-xl-square position-absolute" style="left: 135px; top: 0;" alt="Image">
+                                    <div class="position-absolute text-dark" style="left: 220px; top: 10px;">
+                                        <p class="mb-0">20+</p>
+                                        <p class="mb-0">優秀教師</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-4 text-center align-items-center justify-content-center">
+                            <div class="col-sm-4">
+                                <div class="bg-primary rounded p-4">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <span class="counter-value fs-1 fw-bold text-dark" data-toggle="counter-up">5</span>
+                                        <h4 class="text-dark fs-1 mb-0" style="font-weight: 600; font-size: 25px;">位</h4>
+                                    </div>
+                                    <div class="w-100 d-flex align-items-center justify-content-center">
+                                        <p class="text-white mb-0">全球前2%頂尖科學家</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="bg-dark rounded p-4">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <span class="counter-value fs-1 fw-bold text-white" data-toggle="counter-up">20</span>
+                                        <h4 class="text-white fs-1 mb-0" style="font-weight: 600; font-size: 25px;">年</h4>
+                                    </div>
+                                    <div class="w-100 d-flex align-items-center justify-content-center">
+                                        <p class="mb-0">平均教學經驗</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="bg-primary rounded p-4">
+                                    <div class="d-flex align-items-center justify-content-center">
+                                        <span class="counter-value fs-1 fw-bold text-dark" data-toggle="counter-up">5</span>
+                                        <h4 class="text-dark fs-1 mb-0" style="font-weight: 600; font-size: 25px;">年</h4>
+                                    </div>
+                                    <div class="w-100 d-flex align-items-center justify-content-center">
+                                        <p class="text-white mb-0">教師實務經驗</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Services Start -->
+        <!-- <div class="container-fluid service py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+                    <h4 class="text-primary">Our Services</h4>
+                    <h1 class="display-4"> Offering the Best Consulting & Investa Services</h1>
+                </div>
+                <div class="row g-4 justify-content-center text-center">
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item bg-light rounded">
+                            <div class="service-img">
+                                <img src="img/service-1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            </div>
+                            <div class="service-content text-center p-4">
+                                <div class="service-content-inner">
+                                    <a href="#" class="h4 mb-4 d-inline-flex text-start"><i class="fas fa-donate fa-2x me-2"></i> Business Strategy Invesments</a>
+                                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum nobis est sapiente natus officiis maxime
+                                    </p>
+                                    <a class="btn btn-light rounded-pill py-2 px-4" href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item bg-light rounded">
+                            <div class="service-img">
+                                <img src="img/service-2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            </div>
+                            <div class="service-content text-center p-4">
+                                <div class="service-content-inner">
+                                    <a href="#" class="h4 mb-4 d-inline-flex text-start"><i class="fas fa-donate fa-2x me-2"></i> Consultancy & Advice</a>
+                                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum nobis est sapiente natus officiis maxime
+                                    </p>
+                                    <a class="btn btn-light rounded-pill py-2 px-4" href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item bg-light rounded">
+                            <div class="service-img">
+                                <img src="img/service-4.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            </div>
+                            <div class="service-content text-center p-4">
+                                <div class="service-content-inner">
+                                    <a href="#" class="h4 mb-4 d-inline-flex text-start"><i class="fas fa-donate fa-2x me-2"></i> Invesments Planning</a>
+                                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum nobis est sapiente natus officiis maxime
+                                    </p>
+                                    <a class="btn btn-light rounded-pill py-2 px-4" href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="service-item bg-light rounded">
+                            <div class="service-img">
+                                <img src="img/service-3.jpg" class="img-fluid w-100 rounded-top" alt="">
+                            </div>
+                            <div class="service-content text-center p-4">
+                                <div class="service-content-inner">
+                                    <a href="#" class="h4 mb-4 d-inline-flex text-start"><i class="fas fa-donate fa-2x me-2"></i> Private Client Investment</a>
+                                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum nobis est sapiente natus officiis maxime
+                                    </p>
+                                    <a class="btn btn-light rounded-pill py-2 px-4" href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <a class="btn btn-primary rounded-pill py-3 px-5 wow fadeInUp" data-wow-delay="0.1s" href="#">Services More</a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Services End -->
+
+
+        <!-- Project Start -->
+        <!-- <div class="container-fluid project">
+            <div class="container">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+                    <h4 class="text-primary">Our Projects</h4>
+                    <h1 class="display-4">Explore Our Latest Projects</h1>
+                </div>
+                <div class="project-carousel owl-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="project-item h-100 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="project-img">
+                            <img src="img/projects-1.jpg" class="img-fluid w-100 rounded" alt="Image">
+                        </div>
+                        <div class="project-content bg-light rounded p-4">
+                            <div class="project-content-inner">
+                                <div class="project-icon mb-3"><i class="fas fa-chart-line fa-4x text-primary"></i></div>
+                                <p class="text-dark fs-5 mb-3">Business Growth</p>
+                                <a href="#" class="h4">Business Strategy And Investment Planning Growth Consulting</a>
+                                <div class="pt-4">
+                                    <a class="btn btn-light rounded-pill py-3 px-5" href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-item h-100 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="project-img">
+                            <img src="img/projects-1.jpg" class="img-fluid w-100 rounded" alt="Image">
+                        </div>
+                        <div class="project-content bg-light rounded p-4">
+                            <div class="project-content-inner">
+                                <div class="project-icon mb-3"><i class="fas fa-signal fa-4x text-primary"></i></div>
+                                <p class="text-dark fs-5 mb-3">Marketing Strategy</p>
+                                <a href="#" class="h4">Product Sailing Marketing Strategy For Improve Business</a>
+                                <div class="pt-4">
+                                    <a class="btn btn-light rounded-pill py-3 px-5" href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-item h-100">
+                        <div class="project-img">
+                            <img src="img/projects-1.jpg" class="img-fluid w-100 rounded" alt="Image">
+                        </div>
+                        <div class="project-content bg-light rounded p-4">
+                            <div class="project-content-inner">
+                                <div class="project-icon mb-3"><i class="fas fa-signal fa-4x text-primary"></i></div>
+                                <p class="text-dark fs-5 mb-3">Marketing Strategy</p>
+                                <a href="#" class="h4">Product Sailing Marketing Strategy For Improve Business</a>
+                                <div class="pt-4">
+                                    <a class="btn btn-light rounded-pill py-3 px-5" href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Project End -->
+
+
+        <!-- Blog Start -->
+        <div class="container-fluid blog pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+                    <h4 class="text-primary">相關文章</h4>
+                    <h1 class="display-4">採訪和系所影片</h1>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="blog-item bg-light rounded p-4" style="background-image: url(img/bg.png);">
+                            <div class="mb-4">
+                                <h4 class="text-primary mb-2">採訪</h4>
+                                <div class="d-flex justify-content-between">
+                                    <p class="mb-0"><span class="text-dark fw-bold">On</span> Jan 06, 2021</p>
+                                    <p class="mb-0"><span class="text-dark fw-bold">By</span> 天下雜誌</p>
+                                </div>
+                            </div>
+                            <div class="project-img">
+                                <img src="https://storage.googleapis.com/www-cw-com-tw/article/202012/article-5fec667c754f6.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                <div class="blog-plus-icon">
+                                    <a href="https://storage.googleapis.com/www-cw-com-tw/article/202012/article-5fec667c754f6.jpg" data-lightbox="blog-1" class="btn btn-primary btn-md-square rounded-pill"><i class="fas fa-plus fa-1x"></i></a>
+                                </div>
+                            </div>
+                            <div class="my-4 mb-5">
+                                <a href="https://mis.nkust.edu.tw/p/406-1097-39923,r1104.php?Lang=zh-tw" class="h4">未來人才的3大關鍵能力∣出自天下雜誌採訪</a>
+                            </div>
+                            <a class="btn btn-primary rounded-pill py-2 px-4 mb-1" href="https://mis.nkust.edu.tw/p/406-1097-39923,r1104.php?Lang=zh-tw">探索更多</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="blog-item bg-light rounded p-4" style="background-image: url(img/bg.png);">
+                            <div class="mb-4">
+                                <h4 class="text-primary mb-2">採訪</h4>
+                                <div class="d-flex justify-content-between">
+                                    <p class="mb-0"><span class="text-dark fw-bold">On</span> Dec 22, 2020</p>
+                                    <p class="mb-0"><span class="text-dark fw-bold">By</span> 天下雜誌</p>
+                                </div>
+                            </div>
+                            <div class="project-img">
+                                <img src="https://storage.googleapis.com/www-cw-com-tw/article/202012/article-5fdaf728de307.jpg" class="img-fluid w-100 rounded" alt="Image">
+                                <div class="blog-plus-icon">
+                                    <a href="https://storage.googleapis.com/www-cw-com-tw/article/202012/article-5fdaf728de307.jpg" data-lightbox="blog-2" class="btn btn-primary btn-md-square rounded-pill"><i class="fas fa-plus fa-1x"></i></a>
+                                </div>
+                            </div>
+                            <div class="my-4">
+                                <a href="https://mis.nkust.edu.tw/p/406-1097-39583,r1104.php?Lang=zh-tw" class="h4">人文＋資訊創新 國立高雄科技大學商業資訊學群 催生南部智慧資訊商業服務聚落∣出自天下雜誌採訪</a>
+                            </div>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="https://mis.nkust.edu.tw/p/406-1097-39583,r1104.php?Lang=zh-tw">探索更多</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="blog-item bg-light rounded p-4" style="background-image: url(img/bg.png);">
+                            <div class="mb-4">
+                                <h4 class="text-primary mb-2">影片</h4>
+                                <div class="d-flex justify-content-between">
+                                    <p class="mb-0"><span class="text-dark fw-bold">On</span> May 31, 2021</p>
+                                    <p class="mb-0"><span class="text-dark fw-bold">By</span> 資管系</p>
+                                </div>
+                            </div>
+                            <div class="project-img">
+                                <iframe class="w-100 rounded" height="300" src="https://www.youtube.com/embed/UetogI6QMWk?si=JDPdkIk9P2lKKnZK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <!-- <img src="https://www.youtube.com/watch?v=UetogI6QMWk" class="img-fluid w-100 rounded" alt="Image"> -->
+                                <!-- <div class="blog-plus-icon">
+                                    <a href="img/blog-3.jpg" data-lightbox="blog-3" class="btn btn-primary btn-md-square rounded-pill"><i class="fas fa-plus fa-1x"></i></a>
+                                </div> -->
+                            </div>
+                            <div class="my-4">
+                                <a href="https://youtu.be/UetogI6QMWk?si=JDPdkIk9P2lKKnZK" class="h4">【系所影片】高科大宣傳短片</a>
+                            </div>
+                            <a class="btn btn-primary rounded-pill py-2 px-4" href="https://youtu.be/UetogI6QMWk?si=JDPdkIk9P2lKKnZK">探索更多</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Blog End -->
+
+
+        <!-- Team Start -->
+        <div class="container-fluid team pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
+                    <h4 class="text-primary">師資陣容</h4>
+                    <h1 class="display-4">專任教師</h1>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item rounded">
+                            <div class="team-img">
+                                <img src="https://mis.nkust.edu.tw/var/file/97/1097/pictures/225/m/mczh-tw400x400_small45458_11062349199.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                                <div class="team-icon">
+                                    <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href="https://mis.nkust.edu.tw/p/404-1097-45458.php?Lang=zh-tw"><i class="fas fa-link"></i></a>
+                                    <div class="team-icon-share">
+                                        <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href="http://line.naver.jp/R/msg/text/?%E5%91%A8%E6%A3%9F%E7%A5%A5%20Chou%2C%20Tung-Hsiang%20https%3A%2F%2Fmis.nkust.edu.tw%2Fp%2F404-1097-45458.php%3FLang%3Dzh-tw%26ct%3D1624849207"><i class="fab fa-line"></i></a>
+                                        <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fmis.nkust.edu.tw%2Fp%2F404-1097-45458.php%3FLang%3Dzh-tw%26ct%3D1624849207&t=%E5%91%A8%E6%A3%9F%E7%A5%A5%20Chou%2C%20Tung-Hsiang"><i class="fab fa-facebook-f"></i></a>
+                                        <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-0" href="http://twitter.com/home?status=%E5%91%A8%E6%A3%9F%E7%A5%A5%20Chou%2C%20Tung-Hsiang%20https%3A%2F%2Fmis.nkust.edu.tw%2Fp%2F404-1097-45458.php%3FLang%3Dzh-tw%26ct%3D1624849207"><i class="fab fa-twitter"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-content bg-dark text-center rounded-bottom p-4">
+                                <div class="team-content-inner rounded-bottom">
+                                    <h4 class="text-white">周棟祥</h4>
+                                    <p class="text-muted mb-0">Professor</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item rounded">
+                            <div class="team-img">
+                                <img src="https://mis.nkust.edu.tw/var/file/97/1097/pictures/573/m/mczh-tw400x400_small23848_774219635259.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                                <div class="team-icon">
+                                    <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href="https://mis.nkust.edu.tw/p/404-1097-23848.php?Lang=zh-tw"><i class="fas fa-share-alt"></i></a>
+                                    <div class="team-icon-share">
+                                        <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href="http://line.naver.jp/R/msg/text/?%E5%BC%B5%E5%BC%98%E6%AF%85%20Hung-Yi%20Chang%20https%3A%2F%2Fmis.nkust.edu.tw%2Fp%2F404-1097-23848.php%3FLang%3Dzh-tw%26ct%3D1577535262"><i class="fab fa-line"></i></a>
+                                        <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fmis.nkust.edu.tw%2Fp%2F404-1097-23848.php%3FLang%3Dzh-tw%26ct%3D1577535262&t=%E5%BC%B5%E5%BC%98%E6%AF%85%20Hung-Yi%20Chang"><i class="fab fa-facebook-f"></i></a>
+                                        <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-0" href="http://twitter.com/home?status=%E5%BC%B5%E5%BC%98%E6%AF%85%20Hung-Yi%20Chang%20https%3A%2F%2Fmis.nkust.edu.tw%2Fp%2F404-1097-23848.php%3FLang%3Dzh-tw%26ct%3D1577535262"><i class="fab fa-twitter"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-content bg-dark text-center rounded-bottom p-4">
+                                <div class="team-content-inner rounded-bottom">
+                                    <h4 class="text-white">張弘毅</h4>
+                                    <p class="text-muted mb-0">Professor</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item rounded">
+                            <div class="team-img">
+                                <img src="https://mis.nkust.edu.tw/var/file/97/1097/pictures/922/m/mczh-tw400x400_small23851_559634686.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                                <div class="team-icon">
+                                    <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href="https://mis.nkust.edu.tw/p/404-1097-23851.php?Lang=zh-tw"><i class="fas fa-share-alt"></i></a>
+                                    <div class="team-icon-share">
+                                        <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href="http://line.naver.jp/R/msg/text/?%E6%9D%8E%E5%98%89%E7%B4%98%20Jia-Hong%20Lee%20https%3A%2F%2Fmis.nkust.edu.tw%2Fp%2F404-1097-23851.php%3FLang%3Dzh-tw%26ct%3D1577534690"><i class="fab fa-line"></i></a>
+                                        <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fmis.nkust.edu.tw%2Fp%2F404-1097-23851.php%3FLang%3Dzh-tw%26ct%3D1577534690&t=%E6%9D%8E%E5%98%89%E7%B4%98%20Jia-Hong%20Lee"><i class="fab fa-facebook-f"></i></a>
+                                        <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-0" href="http://twitter.com/home?status=%E6%9D%8E%E5%98%89%E7%B4%98%20Jia-Hong%20Lee%20https%3A%2F%2Fmis.nkust.edu.tw%2Fp%2F404-1097-23851.php%3FLang%3Dzh-tw%26ct%3D1577534690"><i class="fab fa-twitter"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-content bg-dark text-center rounded-bottom p-4">
+                                <div class="team-content-inner rounded-bottom">
+                                    <h4 class="text-white">李嘉紘</h4>
+                                    <p class="text-muted mb-0">Professor</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="team-item rounded">
+                            <div class="team-img">
+                                <img src="https://mis.nkust.edu.tw/var/file/97/1097/pictures/0/m/mczh-tw400x400_small23862_282388830343.jpg" class="img-fluid w-100 rounded-top" alt="Image">
+                                <div class="team-icon">
+                                    <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href="https://mis.nkust.edu.tw/p/404-1097-23862.php?Lang=zh-tw"><i class="fas fa-share-alt"></i></a>
+                                    <div class="team-icon-share">
+                                        <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href="http://line.naver.jp/R/msg/text/?%E9%99%B3%E4%B8%96%E6%99%BA%20Shih-Chih%20Chen%20https%3A%2F%2Fmis.nkust.edu.tw%2Fp%2F404-1097-23862.php%3FLang%3Dzh-tw%26ct%3D1577530347"><i class="fab fa-line"></i></a>
+                                        <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-3" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fmis.nkust.edu.tw%2Fp%2F404-1097-23862.php%3FLang%3Dzh-tw%26ct%3D1577530347&t=%E9%99%B3%E4%B8%96%E6%99%BA%20Shih-Chih%20Chen"><i class="fab fa-facebook-f"></i></a>
+                                        <a class="btn btn-primary btn-sm-square text-white rounded-circle mb-0" href="http://twitter.com/home?status=%E9%99%B3%E4%B8%96%E6%99%BA%20Shih-Chih%20Chen%20https%3A%2F%2Fmis.nkust.edu.tw%2Fp%2F404-1097-23862.php%3FLang%3Dzh-tw%26ct%3D1577530347"><i class="fab fa-twitter"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-content bg-dark text-center rounded-bottom p-4">
+                                <div class="team-content-inner rounded-bottom">
+                                    <h4 class="text-white">陳世智</h4>
+                                    <!-- <p class="text-muted mb-0">CEO & Founder</p> -->
+                                    <p class="text-muted mb-0">Professor</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+
+
+        <!-- Testimonial Start -->
+        <div class="container-fluid testimonial bg-light py-5">
+            <div class="container py-5">
+                <div class="row g-4 align-items-center">
+                    <div class="col-xl-4 wow fadeInLeft" data-wow-delay="0.1s">
+                        <div class="h-100 rounded">
+                            <h4 class="text-primary">回饋</h4>
+                            <h1 class="display-4 mb-4">對我們的評論</h1>
+                            <p class="mb-4">在google上的評論</p>
+                            <a class="btn btn-primary rounded-pill text-white py-3 px-5" href="https://www.google.com/maps/place/%E5%9C%8B%E7%AB%8B%E9%AB%98%E9%9B%84%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8%E7%AC%AC%E4%B8%80%E6%A0%A1%E5%8D%80%E7%AE%A1%E7%90%86%E5%AD%B8%E9%99%A2/data=!4m7!3m6!1s0x346e0e21f87c86ab:0xa5bcba3dd9f57a9e!8m2!3d22.7572265!4d120.337602!16s%2Fg%2F1q646jmzl!19sChIJq4Z8-CEObjQRnnr12T26vKU?authuser=0&hl=zh-TW&rclk=1">查看所有評論<i class="fas fa-arrow-right ms-2"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-8">
+                        <div class="testimonial-carousel owl-carousel wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="testimonial-item bg-white rounded p-4 wow fadeInUp" data-wow-delay="0.3s">
+                                <div class="d-flex">
+                                    <div><i class="fas fa-quote-left fa-3x text-dark me-3"></i></div>
+                                    <p class="mt-4">校地寬廣教室充裕，在這裡讀書的學生很幸福！
+                                    </p>
+                                </div>
+                                <div class="d-flex justify-content-end">
+                                    <div class="my-auto text-end">
+                                        <h5>000 Lin</h5>
+                                        <p class="mb-0">在地嚮導</p>
+                                    </div>
+                                    <div class="bg-white rounded-circle ms-3">
+                                        <img src="https://lh3.googleusercontent.com/a-/ALV-UjXPSOJASnQCjTIqZcQCVFjbzLxF_zDRTxX-KKgR4mr3dyVjjbnd=w45-h45-p-rp-mo-ba3-br100" class="rounded-circle p-2" style="width: 80px; height: 80px; border: 1px solid; border-color: var(--bs-primary);" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-item bg-white rounded p-4 wow fadeInUp" data-wow-delay="0.5s">
+                                <div class="d-flex">
+                                    <div><i class="fas fa-quote-left fa-3x text-dark me-3"></i></div>
+                                    <p class="mt-4">校園寬敞，空氣不錯，建築物不會感到壓迫感
+                                    </p>
+                                </div>
+                                <div class="d-flex justify-content-end">
+                                    <div class="my-auto text-end">
+                                        <h5>otter.chengle Aoo</h5>
+                                        <p class="mb-0">在地嚮導</p>
+                                    </div>
+                                    <div class="bg-white rounded-circle ms-3">
+                                        <img src="https://lh3.googleusercontent.com/a/ACg8ocK1kqYzBJXzOIYncEfN4UwqcuNjPgYfE-U0xfCaqsxJFSuE_g=w45-h45-p-rp-mo-ba5-br100" class="rounded-circle p-2" style="width: 80px; height: 80px; border: 1px solid; border-color: var(--bs-primary);" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-item bg-white rounded p-4 wow fadeInUp" data-wow-delay="0.7s">
+                                <div class="d-flex mb-4">
+                                    <div><i class="fas fa-quote-left fa-3x text-dark me-3"></i></div>
+                                    <p class="mt-4">校園非常漂亮，適合散步運動。
+                                    </p>
+                                </div>
+                                <div class="d-flex justify-content-end">
+                                    <div class="my-auto text-end">
+                                        <h5>Kao Yung Chang</h5>
+                                        <p class="mb-0">在地嚮導</p>
+                                    </div>
+                                    <div class="bg-white rounded-circle ms-3">
+                                        <img src="https://lh3.googleusercontent.com/a/ACg8ocKqt4SVHzOKD29Qm7AD-gEWZJ-JeK-zsDjeKHYiSficjICQzQ=w45-h45-p-rp-mo-ba4-br100" class="rounded-circle p-2" style="width: 80px; height: 80px; border: 1px solid; border-color: var(--bs-primary);" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
+
+
+        <!-- FAQ Start -->
+        <div class="container-fluid faq py-5">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+                        <div class="pb-5">
+                            <h4 class="text-primary">FAQs</h4>
+                            <h1 class="display-4">常見問題</h1>
+                        </div>
+                       <div class="accordion bg-light rounded p-4" id="accordionExample">
+                            <div class="accordion-item border-0 mb-4">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button text-dark fs-5 fw-bold rounded-top" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseTOne">
+                                        資管系未來就業發展有哪些?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body my-2">
+                                        <h5>升學</h5>
+                                        <p>國內外研究所或博士班</p>
+                                        <h5>就業</h5>
+                                        <p>程式設計師、軟體設計工程師、資料庫管理人員、資料分析處理師、系統管理工程師、系統整合工程師、多媒體設計師、網路管理工程師、網路安全分析師</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 mb-4">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed text-dark fs-5 fw-bold rounded-top" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        資管系有什麼特色?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body my-2">
+                                        <h5>研究領域四大主軸</h5>
+                                        <p>1. 人工智慧和物聯網</p>
+                                        <p>2. 金融科技和區塊鏈</p>
+                                        <p>3. 電子商務和社群商務</p>
+                                        <p>4. 創新服務應用</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 mb-4">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed text-dark fs-5 fw-bold rounded-top" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        有沒有交換學生的資源?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body my-2">
+                                        <p>在歐洲、美洲、東北亞、東南亞有多間學校可進行交換學生。</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 mb-0">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed text-dark fs-5 fw-bold rounded-top" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        日四技有哪些招生類別?
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body my-2">
+                                        <p>特殊選才、聯合登記分發、申請入學(高中生適用)、技優保送、轉學考試、身障生甄試、甄選入學、技優甄審、繁星計畫、運動技優。</p>
+                                    </div>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
+                        <div class="faq-img RotateMoveRight rounded">
+                            <img src="https://i.ibb.co/Cmpgrbw/it-img.jpg" class="img-fluid rounded w-100" alt="Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FAQ End -->
+
+        <!-- Footer Start -->
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <div class="footer-item">
+                                <h4 class="text-white mb-4">校長的話</h4>
+                                <p class="mb-3">
+                                    勉勵新生以「平權、團隊、文化」為核心精神，尊重差異、包容多元，珍惜合作機會，培養自我文化底蘊，並透過在校的學習與成長，為未來向世界展示獨特的自己，並共同打造更美好的社會。
+                                </p>
+                                <!-- <div class="position-relative mx-auto rounded-pill">
+                                    <input class="form-control rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="Enter your email">
+                                    <button type="button" class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2">SignUp</button>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-white mb-4">探索</h4>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> 首頁</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> 關於我們</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> 相關文章</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> 師資陣容</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> 回饋</a>
+                            <a href="#"><i class="fas fa-angle-right me-2"></i> FAQs</a>
+                            <!-- <a href="#"><i class="fas fa-angle-right me-2"></i> Contact Us</a> -->
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item d-flex flex-column">
+                            <h4 class="text-white mb-4">聯絡方式</h4>
+                            <a href=""><i class="fa fa-map-marker-alt me-2"></i> 高雄市燕巢區 824 大學路1號</a>
+                            <a href=""><i class="fas fa-envelope me-2"></i> vicky923@nkust.edu.tw</a>
+                            <a href=""><i class="fas fa-phone me-2"></i> 07-6011000 #34102</a>
+                            <div class="d-flex align-items-center">
+                                <a class="btn btn-light btn-md-square me-2" href="https://www.facebook.com/alumni.IMnkfust/"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-light btn-md-square me-2" href="https://www.instagram.com/nkust_im/"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item-post d-flex flex-column">
+                            <h4 class="text-white mb-4">其他資訊</h4>
+                            <div class="d-flex flex-column mb-3">
+                                <p class="text-uppercase text-primary mb-2">熱門連結</p>
+                                <a href="https://www.nkust.edu.tw/index.php" class="text-body">高科大首頁</a>
+                            </div>
+                            <div class="d-flex flex-column mb-3">
+                                <p class="text-uppercase text-primary mb-2">捐款專區</p>
+                                <a href="https://forms.gle/jxQcDjFkMM13Apz6A" class="text-body">高科大資訊管理系急難救助金捐款表單</a>
+                            </div>
+                            <!-- <div class="footer-btn text-start">
+                                <a href="#" class="btn btn-light rounded-pill px-4">View All Post <i class="fa fa-arrow-right ms-1"></i></a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-body"><a href="#" class="border-bottom text-primary"><i class="fas fa-copyright text-light me-2"></i>林修同</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-body">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="border-bottom text-primary" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom text-primary" href="https://themewagon.com">ThemeWagon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
